@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   resources :pages
 
   resources :links
+
+  resources :comments
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

@@ -1,2 +1,9 @@
+<%= will_paginate @links %>
 <h2> I am HOMEPAGE </h2>
 <%= link_to "Add a link", new_link_path %>
+<ul>
+  <% @links.each do |link| %>
+    <li><%= link_to "#{link.title}", "#{link.url}" %> </li>
+    <%= link_to "comments", link %>
+  <% end %>
+</ul>
