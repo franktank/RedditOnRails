@@ -15,6 +15,8 @@ Rails.application.routes.draw do
   resources :comments
 
   resources :votes
+
+  get 'search' => 'search#index'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
